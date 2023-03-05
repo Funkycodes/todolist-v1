@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
+  <link rel="stylesheet" href="styles/style.css" media="all">
+  <title>TodoList</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="#" class="todolist" autocomplete="off">
+      <div class="new-task">
+        <div class="new-task__input-group"><label for="new-task"> Add a task
+          </label> <br>
+          <input type="text" name="new-task" id="new-task" placeholder="E.g. Call Fatma" />
+        </div>
+        <button type="submit" class="transition new-task__button">
+          <svg viewBox="0 0 10 10" class="transition">
+            <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2z" fill-rule="nonzero">
+          </svg>
+          <span class="transition">Add task</span>
+        </button>
+      </div>
+      <!-- Task List -->
+      <ul class="task_list"></ul>
+      <div class="empty_state">
+        Getting your tasks from the mothership... Please wait a bit... <span
+          class="material-icons-round load">electric_scooter</span>...The force is chaotic today.
+      </div>
+    </form>
+  </div>
+  <div class="auth-container">
+    <form class="auth" data-auth-type="ver">
+      <div class="input-group">
+        <label for="username"> Username<br>
+          <input type="text" required placeholder="example@gmail.com">
+        </label>
+
+        <label for="password"> Password<br>
+          <span class="password-container">
+            <input type="password" class="passwd" required>
+            <span class="material-icons-round">visibility</span>
+          </span>
+        </label>
+      </div>
+      <div class="btn-container">
+        <span class="switch">Don't have an account? Sign Up</span>
+        <button type="submit">Sign in</button>
+      </div>
+    </form>
+  </div>
+  <div class="message-container">
+    <p class="message">
+      Can't connect to server. Check internet connectivity and try again
+    </p>
+    <button>
+      OK
+    </button>
+  </div>
+  <script src="./js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
